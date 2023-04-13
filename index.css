@@ -78,7 +78,7 @@ nav {
 
 
 .foto-info {
-    color: fefae0;
+    color: #fefae0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,6 +94,7 @@ nav {
     font-family: 'titulo';
     font-size: 2.5rem;
     padding: 0 0.5rem 0.8rem 2rem;
+    text-shadow: 0 5px 15px	#111111;
 }
 
 .foto-info p {
@@ -101,6 +102,7 @@ nav {
     font-size: 1.1rem;
     padding-left: 2rem;
     padding-right: 0.5rem;
+    text-shadow: 0 5px 15px	#111111;
 }
 
 /* Acá termina el css de .foto-info */
@@ -119,7 +121,7 @@ nav {
 .datos h2 {
     font-family: 'titulo';
     font-size: 2.5rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
 }
 
 .box-datos {
@@ -137,6 +139,11 @@ nav {
 .box-datos-1 h3 {
     font-size: 5rem;
     text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.box-datos-1 p {
+    text-align: center;
 }
 
 .box-datos-2 {
@@ -145,6 +152,12 @@ nav {
 
 .box-datos-2 h3 {
     font-size: 5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+
+.box-datos-2 p {
     text-align: center;
 }
 
@@ -155,6 +168,12 @@ nav {
 
 .box-datos-3 h3 {
     font-size: 5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+
+.box-datos-3 p {
     text-align: center;
 }
 
