@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'titulo';
+    src: url(./fuentes/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'general';
+    src: url(./fuentes/Ubuntu-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: fefae0;
+    box-shadow: 0 5px 15px black;
+    width: 100%;
+    height: 3.75rem;
+    position: fixed;
+}
+
+h1 {
+    color: 219EBC;
+    padding: 1rem;
+    font-family: 'titulo';
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3.75rem;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    list-style-type: none;
+    font-family: 'general';
+    display: none;
+    background-color:fefae0;
+}
+
+.menu-nav a {
+    color: 219EBC;
+    text-decoration: none;
+}
+
+.menu-nav li {
+    margin: 1rem;
+}
+
+.burguer {
+    padding: 1rem;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+#toggle-menu:checked ~ .menu-nav {
+    display: flex;
+}
+
+/* Acá termina el CSS del Header */
+
+
+.foto-info {
+    color: fefae0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(./img/51\ Best\ Classroom\ Decoration\ Ideas\ -\ Chaylor\ &\ Mads.png);
+
+}
+
+.foto-info h2 {
+    font-family: 'titulo';
+    font-size: 2.5rem;
+    padding: 0 0.5rem 0.8rem 2rem;
+}
+
+.foto-info p {
+    font-family: 'general';
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+}
+
+/* Acá termina el css de .foto-info */
+
+.datos {
+    background-color: #fefae0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: #219EBC;
+}
+
+.datos h2 {
+    font-family: 'titulo';
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.box-datos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'general';
+}
+
+.box-datos-1 {
+    margin: 0.8rem;
+}
+
+.box-datos-1 h3 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.box-datos-2 {
+    margin: 0.8rem;
+}
+
+.box-datos-2 h3 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+.box-datos-3 {
+    margin: 0.8rem;
+}
+
+.box-datos-3 h3 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+
+@media (min-width: 768px) {
+    .burguer {
+        display: none;
+    }
+
+    .menu-nav {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: fefae0;
+    }
+}
